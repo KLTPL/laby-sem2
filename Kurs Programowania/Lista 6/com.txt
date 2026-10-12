@@ -1,0 +1,7 @@
+javac -d out src/*.java
+
+java -cp out Main
+
+javadoc -d docs/javadoc src/*.java
+
+doxygen Doxyfile

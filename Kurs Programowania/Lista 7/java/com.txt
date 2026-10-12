@@ -1,0 +1,8 @@
+javac -d out --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls src/*.java
+
+java -cp out --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls TreeServer
+java -cp out --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls TreeClient
+
+javadoc -d docs/javadoc --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls src/*.java
+
+doxygen Doxyfile

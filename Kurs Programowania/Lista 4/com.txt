@@ -1,0 +1,8 @@
+javac PascalTriangle.java Test.java
+java Test 5
+
+mvn clean javafx:run -Djavafx.args="6"
+
+g++ main.cpp PascalTriangleRow.cpp -o program
+javac cpp/Pascal3.java
+java cpp.Pascal3 7

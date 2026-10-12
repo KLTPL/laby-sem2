@@ -1,0 +1,7 @@
+javac -d out --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls src/*.java
+
+java -cp out --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls MainApp
+
+javadoc -d docs/javadoc --module-path javafx-sdk-17.0.10/lib --add-modules javafx.controls src/*.java
+
+doxygen Doxyfile
